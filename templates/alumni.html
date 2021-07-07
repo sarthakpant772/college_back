@@ -1,0 +1,65 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lobster&display=swap" rel="stylesheet"> 
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap" rel="stylesheet">    
+<link rel="stylesheet" href="{% static 'css/alumni_style.css' %}">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alumni</title>
+</head>
+<body>
+    <header>
+        <section class="navs">
+            
+                <a class="nav__button nav__button--mob" href="/">Home</a>
+                <a class="nav__button" href="#sudent_club">Student-Clubs</a>
+                <!-- <a class="nav__button" href="#alumni">Alumni</a> -->
+                <a class="nav__button nav__button--mob" href="about_us.html">About-us</a>
+                <a class="nav__button" href="#">Feed-Back</a>
+                <a class="nav__button" href="#">JIIT-LOGIN</a>
+
+        </section>
+    </header>
+
+    <!-- starting image -->
+    <section class="info">
+        <div class="info__text">
+            <h1>Alumni</h1>
+            <p>Stay connected with our alumni network</p>
+        </div>
+        <div class="info__picture">
+            <img src="{% static 'images/wallpaperbackened.png' %}">
+        </div>
+    </section>
+
+
+    <!-- list of the alumni -->
+    <section class="list">
+       
+        <div class='card'>
+            <div class="content">
+            <img src="{% static 'images/2.jpg' %}" class="card__image">
+            <h1>Sarthak Pant</h1>
+            <p>Software Dev</p>
+            <a>Batch-2024</a>
+            <div class="socials">
+                <a href="#"><img src="{% static 'images/LI-In-Bug.png' %}" class="linkdin"> </a>
+            </div>
+            </div>
+        </div>
+
+
+         
+    </section>
+
+
+</body>
+</html>
