@@ -1,4 +1,5 @@
 {% load static %}
+{% static "images" as baseUrl %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -43,18 +44,20 @@
 
     <!-- list of the alumni -->
     <section class="list">
-       
+        
+       {% for alumni in alunis %} 
         <div class='card'>
             <div class="content">
-            <img src="{% static 'images/2.jpg' %}" class="card__image">
-            <h1>Sarthak Pant</h1>
-            <p>Software Dev</p>
-            <a>Batch-2024</a>
+            <img src="{{alumni.img.url}}" class="card__image">
+            <h1>{{alumni.name}}</h1>
+            <p>{{alumni.Company_name}}</p>
+            <a>{{alumni.Company_post}}</a>
             <div class="socials">
-                <a href="#"><img src="{% static 'images/LI-In-Bug.png' %}" class="linkdin"> </a>
+                <a href="{{alumni.linkdin_url}}" target="_blank"><img src="{% static 'images/LI-In-Bug.png' %}" class="linkdin"> </a>
             </div>
             </div>
         </div>
+        {% endfor %}
 
 
          

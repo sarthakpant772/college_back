@@ -2,19 +2,6 @@
     margin: 0%;
     padding: 0%;
 }
-body::-webkit-scrollbar {
-    width: 12px;               /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: orange;        /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: blue;    /* color of the scroll thumb */
-    border-radius: 20px;       /* roundness of the scroll thumb */
-    border: 3px solid orange;  /* creates padding around scroll thumb */
-  }
 img{
     display: block;
     max-width: 100%;
@@ -25,7 +12,7 @@ html{
 }
 .navs {
     opacity: 0.9;
-    background: #141d1f;
+    background: #457b9db4;
    top: 0%;
    /* width: 100%; */
    z-index: 9999;
@@ -47,11 +34,12 @@ html{
     /* opacity: -0.5; */
 
     padding: 10px;
-    color: white;
+    color: #1d3557;
     margin-left: 15px;
     margin-right: 15px;
     justify-content: center;
     border-spacing: 15px;
+    font-size: 20px;
 
 }
 
@@ -116,7 +104,7 @@ html{
     0%{
         color: black;
         margin-bottom: -40%;
-        zoom: 105%;
+        zoom: 103%;
     }
     30%{
         letter-spacing: 25px;
@@ -154,7 +142,7 @@ html{
     height: 100vh;
     float: left;
     position: relative;
-    /* align-self: center; */
+    align-self: center;
     text-align: center;
 }
 

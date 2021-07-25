@@ -1,22 +1,13 @@
-
 *{
-    margin: 0;
-    padding: 0;
-    font-family: "Open Sans",sans-serif;
-    box-sizing: border-box;
+    margin: 0%;
 }
-
 body{
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #f1f1f1;
+    background-color: #f1faee ;
 }
 
 .navs {
     opacity: 0.9;
-    background: #141d1f;
+    background: #457b9db4;
    top: 0%;
    /* width: 100%; */
    z-index: 9999;
@@ -38,11 +29,12 @@ body{
     /* opacity: -0.5; */
 
     padding: 10px;
-    color: white;
+    color: #1d3557;
     margin-left: 15px;
     margin-right: 15px;
     justify-content: center;
     border-spacing: 15px;
+    font-size: 20px;
 
 }
 
@@ -56,73 +48,40 @@ body{
     border-radius: 15px 50px 30px;
 }
 
-.about-section{
-    background: url(logo.png) no-repeat left;
-    background-size: 55%;
-    background-color: #fdfdfd;
-    overflow: hidden;
-    padding: 100px 0;
+.about-us{
+    height: 100vh;
+    /* width: 100%; */
+    text-align: center;
+    /* margin: 5em; */
+    background-color: #f1faee;
 }
 
-.inner-container{
-    width: 55%;
-    float: right;
-    background-color: #fdfdfd;
-    padding: 150px;
-}
-
-.inner-container h1{
-    margin-bottom: 30px;
+.about-us__heading{
+    padding-top: 10%;
+    font-family: 'Lobster', cursive;
     font-size: 30px;
-    font-weight: 900;
+    text-decoration: underline;
+    color: #1d3557;
 }
 
-.text{
-    font-size: 13px;
-    color: #545454;
-    line-height: 30px;
-    text-align: justify;
-    margin-bottom: 40px;
+.about-us__content{
+    padding-top: 3%;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: 20px;
+    color: #457b9d;
 }
 
-.skills{
-    display: flex;
-    justify-content: space-between;
-    font-weight: 700;
-    font-size: 13px;
-}
 
-@media screen and (max-width:1200px){
-    .inner-container{
-        padding: 80px;
-    }
-}
 
-@media screen and (max-width:1000px){
-    .about-section{
-        background-size: 100%;
-        padding: 100px 40px;
-    }
-    .inner-container{
-        width: 100%;
-    }
-}
-
-@media screen and (max-width:600px){
-    .about-section{
-        padding: 0;
-    }
-    .inner-container{
-        padding: 60px;
-    }
-
-}
 footer{
-    position: fixed;
+    /* position: relative; */
     bottom: 0;
+    z-index: 1;
    }
    .footer-distributed{
-    background-color: #292c2f;
+       /* position: relative; */
+    background-color: #1d3557;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
     box-sizing: border-box;
     width: 100%;
