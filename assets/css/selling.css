@@ -1,0 +1,142 @@
+*{
+    margin: 0%;
+}
+body{
+    background-color: #ece4db;
+}
+.navs {
+    opacity: 0.9;
+    background: #fec5bb;
+   top: 0%;
+   /* width: 100%; */
+   z-index: 9999;
+
+   padding: 1em;
+   text-align: center;
+   text-size-adjust: 80%;
+   word-spacing: 30px;
+
+    
+}
+
+
+.nav__button{
+    position: relative;
+    /* margin: auto; */
+    align-self: center;
+    text-align: center;
+    /* opacity: -0.5; */
+
+    padding: 10px;
+    color: #1d3557;
+    margin-left: 15px;
+    margin-right: 15px;
+    justify-content: center;
+    border-spacing: 15px;
+    font-size: 20px;
+
+}
+
+.nav__button:link{
+    text-decoration: none;
+}
+
+.nav__button:hover{
+
+    background-color: rgba(255, 255, 255, 0.212);
+    border-radius: 15px 50px 30px;
+}
+
+
+.shop{
+    height: 40vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-image: url(../images/backcheck.jpg); 
+     /* background-color: #fec89a; */
+    justify-content: center;
+}
+
+.shop--text{
+    align-self: center;
+    font-size: 3em;
+    color: #1d3557;
+    text-decoration: underline;
+    /* margin-top: 10%; */
+}
+
+.shop--button{
+    align-self: flex-end;
+    margin-left: 3em;
+    margin-top: 3em;
+    padding: 1em;
+    background-color: #ffe5d9;
+    font-size: large;
+    border-radius: 10% 10% 10% 10%;
+}
+
+
+.card-sec{
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content:flex-start ;
+    width: 100%;
+}
+
+
+.card{
+    width: 250px; 
+    height: 350px;
+    margin: 1.5em;
+    background-color: #fec5bb;
+    border-radius: 10% 10% 10% 10%;
+}
+.card--content{
+    /* margin-top: 5em; */
+    margin: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.image{
+    margin-top: 1em;
+}
+
+.card--title{
+    align-self: center;
+    font-size: xx-large;
+}
+
+.card--desc{
+    margin-top: 0.5em;
+}
+
+.card--button{
+    align-self: flex-end;
+    width: 2em;
+    padding: 0.5em;
+    background-color: aqua;
+    border-radius: 20% 20% 20% 20%;
+}
+
+.card--button:hover{
+    background-color: aquamarine;
+}
+
+@media (max-width:600px){
+    .card-sec{
+        margin: 0%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card{
+        align-self: center;
+    }
+}

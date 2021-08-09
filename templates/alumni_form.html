@@ -1,0 +1,51 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/alumni_form.css' %}">
+    <title>Alumni application</title>
+</head>
+<body>
+    <header>
+        <section class="navs">
+            
+                <a class="nav__button nav__button--mob nav__button--m" href="home_page.html">Home</a>
+                <a class="nav__button" href="#sudent_club">Student-Clubs</a>
+                <!-- <a class="nav__button" href="#alumni">Alumni</a> -->
+                <a class="nav__button nav__button--mob" href="about_us.html">About-us</a>
+                <a class="nav__button nav__button--m" href="#">Store</a>
+                <!-- <a class="nav__button nav__button--m" href="#">Add-Alumni</a> -->
+
+                <a class="nav__button" href="#">JIIT-LOGIN</a>
+
+        </section>
+    </header>
+
+
+    <section class="form-main">
+
+        <form method="POST" action="alumni_form">
+            {%csrf_token%}
+            <div class="form" >
+                <label for="name" class="lab">Enter name</label><br>
+                <input id="name" type="text" name="name" class="lab-input"><br>
+                <label for="position" class="lab">Enter company-name</label><br>
+                <input id="position" type="text" name="position" class="lab-input"><br> 
+                <label for="batch" class="lab">Enter-Batch</label><br>
+                <input id="batch" type="number" name="batch" class="lab-input"><br> 
+                <label for="link" class="lab">Enter-Linkdin url</label><br>
+                <input id="link" type="url" name="link" class="lab-input"> <br>
+                <label for="photo">Select a Photo:</label>
+                <input type="file" id="photo" name="photo"><br>
+                <button class="but" id="button" type="submit">Submit</button> 
+
+            </div>
+        </form>
+    </section>
+
+
+</body>
+</html>
