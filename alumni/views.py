@@ -14,7 +14,7 @@ def alumni_form(request):
         position=request.POST['position']
         batch=request.POST['batch']
         link=request.POST['link']
-        photo=request.POST['photo']
+        photo=request.POST.get('photo',False)
 
         ins=models.socials(name=name,linkdin_url=link,Company_name=position,Company_post=batch,photo=photo)
         ins.save()

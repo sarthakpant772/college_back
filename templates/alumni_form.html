@@ -27,7 +27,7 @@
 
     <section class="form-main">
 
-        <form method="POST" action="alumni_form">
+        <form method="POST" action="/alumni_form/" enctype='multipart/form-data'>
             {%csrf_token%}
             <div class="form" >
                 <label for="name" class="lab">Enter name</label><br>
