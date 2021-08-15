@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/store.css' %}">
+    <title>Alumni application</title>
+</head>
+<body>
+    <header>
+        <section class="navs">
+            
+                <a class="nav__button nav__button--mob nav__button--m" href="home_page.html">Home</a>
+                <a class="nav__button" href="#sudent_club">Student-Clubs</a>
+                <!-- <a class="nav__button" href="#alumni">Alumni</a> -->
+                <a class="nav__button nav__button--mob" href="about_us.html">About-us</a>
+                <a class="nav__button nav__button--m" href="#">Store</a>
+                <!-- <a class="nav__button nav__button--m" href="#">Add-Alumni</a> -->
+
+                <a class="nav__button" href="#">JIIT-LOGIN</a>
+
+        </section>
+    </header>
+
+<form method="POST" action="store_form" enctype='multipart/form-data'>
+
+    <section class="form-main">
+        {%csrf_token%}
+        <div class="form">
+            <label for="title" class="lab">Product you want to sell</label><br>
+            <input id="title" type="text" name="title" class="lab-input"><br>
+            <label for="para" class="lab">Enter - details about the product</label><br>
+            <input id="para" type="text" name="para" class="lab-input" minlength="100"><br> 
+            <label for="email" class="lab">Enter - email address to for contact</label><br>
+            <input id="email" type="email" name="email" class="lab-input"><br> 
+            <label for="image" class="lab">Upload picture of the object</label><br>
+            <input id="image" type="file" name="image" class="lab-input"> <br>
+            <button class="but" id="button" type="submit">Submit</button> 
+        </div>
+    </section>
+</form>
+
+
+
+</body>
+</html>

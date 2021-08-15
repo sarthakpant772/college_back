@@ -12,7 +12,7 @@
     <header>
         <section class="navs">
             
-                <a class="nav__button nav__button--mob nav__button--m" href="home_page.html">Home</a>
+                <a class="nav__button nav__button--mob nav__button--m" href="/">Home</a>
                 <a class="nav__button" href="#sudent_club">Student-Clubs</a>
                 <!-- <a class="nav__button" href="#alumni">Alumni</a> -->
                 <a class="nav__button nav__button--mob" href="about_us.html">About-us</a>
@@ -24,10 +24,10 @@
         </section>
     </header>
 
-
+<form method="POST" action="alumni_form" enctype='multipart/form-data'>
     <section class="form-main">
 
-        <form method="POST" action="/alumni_form/" enctype='multipart/form-data'>
+        
             {%csrf_token%}
             <div class="form" >
                 <label for="name" class="lab">Enter name</label><br>
@@ -38,14 +38,17 @@
                 <input id="batch" type="number" name="batch" class="lab-input"><br> 
                 <label for="link" class="lab">Enter-Linkdin url</label><br>
                 <input id="link" type="url" name="link" class="lab-input"> <br>
+                <br>
                 <label for="photo">Select a Photo:</label>
                 <input type="file" id="photo" name="photo"><br>
                 <button class="but" id="button" type="submit">Submit</button> 
-
+                {% for message in messages %}
+                <h3>{{message}}</h3>
+                {% endfor %}
             </div>
-        </form>
+        
     </section>
-
+</form>
 
 </body>
 </html>

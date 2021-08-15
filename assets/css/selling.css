@@ -53,7 +53,11 @@ body{
     width: 100%;
     display: flex;
     flex-direction: column;
-    background-image: url(../images/backcheck.jpg); 
+    position: relative;
+    background-image: url(../images/online-store.png); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
      /* background-color: #fec89a; */
     justify-content: center;
 }
@@ -61,8 +65,9 @@ body{
 .shop--text{
     align-self: center;
     font-size: 3em;
-    color: #1d3557;
+    color: #ffff;
     text-decoration: underline;
+
     /* margin-top: 10%; */
 }
 
@@ -100,10 +105,12 @@ body{
     margin: 1em;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-evenly;
 }
 .image{
     margin-top: 1em;
+    height: 150px;
+    width: 250px;
 }
 
 .card--title{
@@ -113,14 +120,19 @@ body{
 
 .card--desc{
     margin-top: 0.5em;
+    position: relative;
+    height: 80px;
+    overflow: hidden;
 }
 
 .card--button{
+    /* margin-top:1em; */
     align-self: flex-end;
     width: 2em;
     padding: 0.5em;
     background-color: aqua;
     border-radius: 20% 20% 20% 20%;
+    text-decoration: none;
 }
 
 .card--button:hover{
@@ -140,3 +152,5 @@ body{
         align-self: center;
     }
 }
+
+

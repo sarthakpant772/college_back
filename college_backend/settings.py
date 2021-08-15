@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'aboutus',
     # 'alumni',
     'home_page',
+    'store',
 ]
 
 MIDDLEWARE = [

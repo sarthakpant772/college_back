@@ -1,23 +1,25 @@
+{% load static %}
+{% static "images" as baseUrl %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="{% static 'css/main.css' %}">
 
-    <link rel="stylesheet" href="css/selling.css">
+    <link rel="stylesheet" href="{% static 'css/selling.css' %}">
     <title>Student-seller</title>
 </head>
 <body>
     <header>
         <section class="navs">
-                <a class="nav__button nav__button--m" href="home_page.html">Home</a>
+                <a class="nav__button nav__button--m" href="/">Home</a>
                 <!-- <a class="nav__button" href="#sudent_club">Student-Clubs</a> -->
-                <!-- <a class="nav__button" href="alumni.html">Alumni</a> -->
+                <a class="nav__button" href="alumni">Alumni</a>
                 <!-- <a class="nav__button nav__button--mob" href="about_us.html">About-us</a> -->
                 <!-- <a class="nav__button" href="#">Feed-Back</a> -->
-                <!-- <a class="nav__button" href="#">JIIT-LOGIN</a> -->
+                <a class="nav__button" href="store_form">add-objects</a>
         </section>
     </header>
 
@@ -31,46 +33,28 @@
     <section >
         <div class="card-sec">
             <!-- card 1 2 3 .... -->
+            {% for sd in store_details %}
             <div class="card">
                 <div class="card--content">
-                    <img src="images/1.jpeg" class="image">
-                    <h2 class="card--title">Title</h2>
-                    <p class="card--desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, corrupti mollitia fugit fugiat deserunt quas hic nam quo ducimus vitae?</p>
-                    <a class="card--button">buy</a>
+                    <img src="{{sd.image.url}}" class="image">
+                    <h2 class="card--title">{{sd.title}}</h2>
+                    <p class="card--desc" >{{sd.para}}</p>
+                    <a class="card--button" href="mailto: {{sd.email}}" target='blank'>buy</a>
                 </div> 
                           
             </div>
+            {% endfor %}
 
 
 
-
-            <div class="card">
-                <div class="card--content">
-                    <img src="images/1.jpeg" class="image">
-                    <h2 class="card--title">Title</h2>
-                    <p class="card--desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, corrupti mollitia fugit fugiat deserunt quas hic nam quo ducimus vitae?</p>
-                    <a class="card--button">buy</a>
-                </div> 
-                          
-            </div>
-
-
-
-            <div class="card">
-                <div class="card--content">
-                    <img src="images/1.jpeg" class="image">
-                    <h2 class="card--title">Title</h2>
-                    <p class="card--desc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro, corrupti mollitia fugit fugiat deserunt quas hic nam quo ducimus vitae?</p>
-                    <a class="card--button">buy</a>
-                </div>           
-            </div>
+            
         </div>
     </section>
 
 
 
 
-    <footer class="footer-distributed">
+    <!-- <footer class="footer-distributed">
  
         <div class="footer-left">
 
@@ -125,6 +109,6 @@
 
         </div>
 
-        </footer>
+        </footer> -->
 </body>
 </html>
