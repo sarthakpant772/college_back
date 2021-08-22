@@ -27,7 +27,7 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-)zl3^1f_9br#%(zv641@ewlm69qw=hiubc+0-p6r2gsolo@2av'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
 ALLOWED_HOSTS = ['git.heroku.com/college-website-jiit.git', '127.0.0.1']
 
