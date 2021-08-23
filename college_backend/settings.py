@@ -86,10 +86,11 @@ WSGI_APPLICATION = 'college_backend.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'college_website',
-        'USER': 'postgres',
-        'PASSWORD': '1234',
-        'HOST': 'localhost' 
+        'NAME': 'da1p4rh5flrjg6',
+        'USER': 'utqlhwggydaayt',
+        'PASSWORD': '9bbe90caaf2a1d8c6164a5fe1ed7fdd9928e91918b006810101604e555a09c37',
+        'HOST': 'ec2-34-255-134-200.eu-west-1.compute.amazonaws.com' ,
+        'PORT':'5432'
     }
 }
 
