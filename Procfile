@@ -1,1 +1,1 @@
-web: gunicorn college_backend.wsgi --log-file -
+web: gunicorn college_backend.wsgi --log-file -cd cd
