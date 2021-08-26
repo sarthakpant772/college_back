@@ -47,10 +47,10 @@ python -m virtualenv .
 ```
 
 
-### Installing Django
+### Installing requirements
 
 ```
-pip3 install django~=3.1
+ pip install -r requirements.txt
 ```
 
 #### Starting up a PROJECT
