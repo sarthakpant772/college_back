@@ -1,0 +1,244 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    background: #f7e7e7e7;
+    justify-content: center;
+    margin: 2rem;
+}
+.cover {
+    background: linear-gradient( rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.507) ), url(https://campus.mozilla.community/static/img/photo_top.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    border-radius: 0;
+}
+.cover{
+    margin-bottom: 2rem;
+}
+
+.cover .lead:nth-child(2)  {
+    color: white  ;
+    max-width: 800px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+ 
+.lead {
+    font-size: 1.25rem;
+    font-weight: 300;
+    font-family: Poppins, sans-serif;
+}
+p, .li{
+    line-height: 1.8rem;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.display-3 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    color: white;
+    font-family: Poppins, sans-serif;
+
+}
+h4 {
+letter-spacing: -0.1rem;
+}
+
+body h3{
+    text-transform: uppercase;
+    font-family: Poppins, sans-serif;
+    font-size: 35px;
+    justify-content: center;
+    text-align: center;
+    letter-spacing: 20px;
+    color: rgb(0, 2, 5);
+}
+.student-card {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem auto;
+    box-shadow: 0 3px 7px -1px rgba(17, 16, 16, 0.1);
+    margin-bottom: 1.6%;
+    background: rgb(255, 229, 229);
+    line-height: 1.4;
+    font-family: 'Roboto Condensed', sans-serif;
+    border-radius: 5px;
+    overflow: hidden;
+    z-index: 0;
+}
+.student-card a {
+    color: inherit;
+}
+.student-card a:hover {
+    color: #e9d311;
+}
+.student-card .photo {
+    transform: scale(1.3) rotate(3deg);
+}
+.student-card .meta {
+    position: relative;
+    z-index: 0;
+    height: 200px;
+}
+.student-card .photo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.2s;
+}
+.student-card .details, .student-card .details ul {
+    margin: auto;
+    padding: 0;
+    list-style: none;
+}
+.student-card .details {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    margin: auto;
+    transition: left 0.2s;
+    background: rgba(0, 0, 0, .6);
+    color: #fff;
+    padding: 10px;
+    width: 100%;
+    font-size: 0.9rem;
+}
+.student-card .details a {
+    text-decoration: dotted underline;
+}
+.student-card .details ul li {
+    display: inline-block;
+}
+.student-card .details .author:before {
+    font-family: FontAwesome;
+    margin-right: 10px;
+    content: "\f007";
+}
+.student-card  .details .date:before {
+    font-family: FontAwesome;
+    margin-right: 10px;
+    content: "\f133";
+}
+.student-card .details .tags ul:before {
+    font-family: FontAwesome;
+    content: "\f02b";
+    margin-right: 10px;
+}
+.student-card .details .tags li {
+    margin-right: 2px;
+}
+.student-card .details .tags li:first-child {
+    margin-left: -4px;
+}
+.student-card .description {
+    padding: 1rem;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+.student-card .description h1, .student-card .description h2 {
+    font-family: Poppins, sans-serif;
+}
+.student-card .description h1 {
+    line-height: 1;
+    margin: 0;
+    font-size: 1.7rem;
+}
+.student-card .description h2 {
+    font-size: 1rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #6d6969;
+    margin-top: 5px;
+}
+.student-card .description .read-more {
+    text-align: right;
+}
+.student-card .description .read-more a {
+    color: #5ad67d;
+    display: inline-block;
+    position: relative;
+}
+.student-card .description .read-more a:after {
+    content: "\f061";
+    font-family: FontAwesome;
+    margin-left: -10px;
+    opacity: 0;
+    vertical-align: middle;
+    transition: margin 0.3s, opacity 0.3s;
+}
+.student-card .description .read-more a:hover:after {
+    margin-left: 5px;
+    opacity: 1;
+}
+.student-card p {
+    position: relative;
+    margin: 1rem 0 0;
+}
+.student-card p:first-of-type {
+    margin-top: 1.25rem;
+}
+.blog-card p:first-of-type:before {
+    content: "";
+    position: absolute;
+    height: 5px;
+    background: #5ad67d;
+    width: 35px;
+    top: -0.75rem;
+    border-radius: 3px;
+}
+.student-card:hover .details {
+    left: 0%;
+}
+@media (min-width: 640px) {
+    .cover {
+        padding: 4rem 2rem;
+    }
+    h4 {
+        line-height: 1.2;
+    }
+    .student-card {
+        flex-direction: row;
+        max-width: 700px;
+   }
+   .student-card .meta {
+        flex-basis: 40%;
+        height: auto;
+   }
+   .student-card .description {
+        flex-basis: 60%;
+   }
+   .student-card .description:before {
+        transform: skewX(-3deg);
+        content: "";
+        background: #fff;
+        width: 30px;
+        position: absolute;
+        left: -10px;
+        top: 0;
+        bottom: 0;
+        z-index: -1;
+   }
+   .student-card.alt {
+        flex-direction: row-reverse;
+   }
+   .student-card.alt .description:before {
+        left: inherit;
+        right: -10px;
+        transform: skew(3deg);
+   }
+   .student-card.alt .details {
+        padding-left: 25px;
+   }
+}

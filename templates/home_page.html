@@ -9,129 +9,65 @@
         <!-- <link href="https://fontawesome.com/icons/github?style=brands" rel="stylesheet"> -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
-        <link rel="stylesheet" href="{%  static 'css/main.css' %}">
+        <link rel="stylesheet" href="{%  static "css/main.css" %}">
         <!-- <link rel="stylesheet" href="style.css"> -->
         <link href="//db.onlinewebfonts.com/c/05289e866fe7e1e99d27a7a31f8d3b66?family=Trattatello" rel="stylesheet" type="text/css"/> 
-        <link rel="icon" href="https://media.discordapp.net/attachments/855891373118062622/873085255874125824/bruteforcelogoblck.jpg">
+        <link rel="icon" href="{% static 'images/logo.png'%}">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Stint+Ultra+Condensed&display=swap" rel="stylesheet"> 
         <script src="https://kit.fontawesome.com/76b59c3605.js" crossorigin="anonymous"></script>
     </head>
     
     <body>
-        <header>
-            <section class="navs">
+        <div class="main-page page parallax">
+            <nav class="nav">
+                <div class="nav-header">
+                    <img src="{% static 'images/logo.png' %}" class="logo" alt="logo">
+                    <button class="mobile-nav">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-three-dots" viewBox="0 0 16 16">
+                           <path d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"/>
+                         </svg>
+                   </button>
+                </div>
+                <ul class="nav-button ">
+                    <li ><a class="links" href="#student_club">Student-clubs</a></li>
+                    <li ><a class="links" href="#alumni">Alumni </a></li>
+                    <li ><a class="links" href="store/store">Store</a></li>
+                    <li ><a class="links" href="aboutus">About-us</a> </li>
+                    <li ><a class="links" href="https://forms.gle/Fj9q8Qx2gT7R5V9m7" target="blank">Feed-Back</a> </li>
+                </ul>
                 
-                <!-- <a class="nav__button nav__button--mob" href="#home">Home</a> -->
-                <a class="nav__button" href="#sudent_club">Student-Clubs</a>
-                <a class="nav__button" href="#alumni">Alumni</a>
-                <a class="nav__button nav__button--m" href="store/store">Store</a>
-                <a class="nav__button nav__button--mob" href="aboutus">About-us</a>
-                <a class="nav__button nav__button--m" href="https://forms.gle/Fj9q8Qx2gT7R5V9m7" target='blank'>Feed-Back</a>
-
-        </section>
-        </header>
-        <!-- page 1 -->
-            <section class="page" id="home">
-                <div class="backg">
-                <!-- <img class="image_back" src="images/1.jpeg"> -->
-                <a class="page_content">Be The Change!</a>
-                </div>
-            </section>
-            <!-- page 2 -->
-            <section class="page" id="sudent_club">
-                <div class="page__2--content">
-                    
-                    <div class="page_box page_box--2">
-                    <h1 class="headding">
-                        Student-Clubs
-                    </h1>
-                    <p class="lowercase">
-                        Student offers a wide variety of clubs to join which are lead by very enthusiastic people which will help you no matter what the condition is.
-                        
-                    </p>
-                    <a class="read_more read_more--2" href="club">Explore The Clubs</a>
-                    </div>
-                 </div>
-            </section>
-
-            <!-- page 3 -->
-            <section class="page" id="alumni">
-                <div class="page__3--content">
-                    
-                    <div class="page_box page_box--3">
-                        <h1 class="headding">Alumni</h1>
-                        <p class="lowercase">
-                            Stay connect to our Alumni network and grow your connections.
-                        </p>
-                        <a class="read_more" href="alumni/alumni_page">Connect with Alumni</a>
-                    </div>
-                </div>
-            </section>
-
-            <!-- about -->
-
-
+            </nav>
+            <div class="maintext center">Be the change!</div>
             
-
-
-            
-            <!-- footer -->
-            <footer class="footer-distributed">
- 
-                <div class="footer-left">
-        
-                <h3>Brute_Force<span>Here</span></h3>
-        
-                <p class="footer-links">
-                <a href="#">Home</a>
-                <a href="#">alumni page</a>
-                <a href="#">CLUBS</a>
-                <a href="#">About</a>
-                <a href="#">Faq</a>
-                <a href="#">Contact</a>
-                </p>
-        
-                <p class="footer-company-name">Brute_Force &copy; 2021</p>
-                </div>
-        
-                <div class="footer-center">
-        
-                <div>
-                <i class="fa fa-map-marker"></i>
-                <p><span>noida jiit 62</span> noida, India</p>
-                </div>
-        
-                <div>
-                <i class="fa fa-phone"></i>
-                <p>+910988898958959</p>
-                </div>
-        
-                <div>
-                <i class="fa fa-envelope"></i>
-                <p><a href="mailto:support@company.com">contact@Brute_Force.com</a></p>
-                </div>
-        
-                </div>
-        
-                <div class="footer-right">
-        
-                <p class="footer-company-about">
-                <span>About the company</span>
-                Brute_Force blahhhhhhhhhhhhhhhhh &amp; Studend.
-                </p>
-        
-                <div class="footer-icons">
-        
-                <a href="#"><i class="fa fa-facebook"></i></a>
-                <a href="#"><i class="fa fa-twitter"></i></a>
-                <a href="#"><i class="fa fa-linkedin"></i></a>
-                <a href="#"><i class="fa fa-github"></i></a>
-        
-                </div>
-        
-                </div>
-        
-                </footer>
-        </body>
-</html>        
+        </div>
+        <div class="page2 ">
+            <div class="page2-cont center">
+            <h1 class="center">Student Website</h1>
+            <p class="center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas maxime amet labore itaque nobis dolor. Sed, minus. Unde nam vel non deserunt. Excepturi, dolore ex accusantium ipsum nemo aliquam? Consectetur.</p>
+            <!-- <button class="center btn">Join Clubs</button> -->
+            </div>
+        </div>
+        <div class="parallax page3">
+            <h1 class="center" id="student_club">Student Clubs</h1>
+        </div>
+        <div class="page2" style="background-color: #282e34">
+            <div class="page2-cont center">
+            <h1 class="center" style="color: whitesmoke;">Join Student Club</h1>
+            <p class="center" style="color: whitesmoke;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas maxime amet labore itaque nobis dolor. Sed, minus. Unde nam vel non deserunt. Excepturi, dolore ex accusantium ipsum nemo aliquam? Consectetur.</p>
+            <a class="center btn" style="color: whitesmoke;" href="club">Join Clubs</a>
+            </div>
+        </div>
+        <div class="parallax page4">
+            <h1 class="center" id="alumni">Allumni network</h1>
+        </div>
+        <div class="page2" style="background-color: #282e34">
+            <div class="page2-cont center">
+            <h1 class="center" style="color: whitesmoke;">Connect with allumni</h1>
+            <p class="center" style="color: whitesmoke;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas maxime amet labore itaque nobis dolor. Sed, minus. Unde nam vel non deserunt. Excepturi, dolore ex accusantium ipsum nemo aliquam? Consectetur.</p>
+            <a class="center btn" style="color: whitesmoke;" href="alumni/alumni_page">Connect</a>
+            </div>
+        </div>
+        <script src="{% static 'js/app.js' %}"></script>
+    </body>
+    </html>
