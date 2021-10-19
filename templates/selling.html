@@ -36,7 +36,7 @@
             {% for sd in store_details %}
             <div class="card">
                 <div class="card--content">
-                    <img src="{{sd.image.url}}" class="image">
+                    <img src="{% static 'images/sell.jpg' %}" class="image">
                     <h2 class="card--title">{{sd.title}}</h2>
                     <p class="card--desc" >{{sd.para}}</p>
                     <a class="card--button" href="mailto: {{sd.email}}" target='blank'>buy</a>
