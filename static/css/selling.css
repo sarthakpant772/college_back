@@ -102,15 +102,16 @@ body{
 }
 .card--content{
     /* margin-top: 5em; */
+    
     margin: 1em;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 .image{
-    margin-top: 1em;
+    margin-top: auto;
     height: 150px;
-    width: 250px;
+    /* width: 25; */
 }
 
 .card--title{
